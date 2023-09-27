@@ -23,6 +23,18 @@ public class calcolatriceTest {
     public void TestMoltiplicazione(){
         Assertions.assertTrue(calcolatrice.moltiplicazione(10, 2)==20, "moltiplicazione corretta");
     }
+    @Test
+    public void TestSottrazione(){
+        Assertions.assertTrue(calcolatrice.sottrazione(10, 5)==5, "sottrazione corretta");
+    }
+    @Test
+    public void TestDivisione(){
+        Assertions.assertTrue(calcolatrice.divisione(10, 5)==2, "divisione corretta");
+    }
+    @Test
+    public void TestDivisionePerZero(){
+        Assertions.assertTrue(calcolatrice.divisione(10, 0)==0, "divisione corretta");
+    }
 
 
 
